@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+</head>
+<body>
+
+    
+    <div class="bg">
+        <div class="switch">
+            <div class="switch_btn"></div>
+        </div>
+        <div class="bulb">
+            <div class="string"><span></span></div>
+        </div>
+    </div>
+
+
+<script>
+
+    const switches = document.querySelector(".switch");
+    const switchBtn = document.querySelector(".switch_btn");
+
+    //do this after building the bulb
+    const bulb = document.querySelector(".bulb");
+
+    switches.addEventListener("click", e => {
+        console.log("ADDED")
+        switchBtn.classList.toggle("on");
+
+        //do this after building the bulb
+        bulb.classList.toggle("on");
+    })
+
+
+</script>
+
+
+</body>
+</html>
